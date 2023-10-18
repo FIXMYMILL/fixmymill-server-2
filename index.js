@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 
-// app.use("/api/sheets",require("./routes/storeuser"));
-// app.use("/api/payments",require("./routes/createOrder"));
-// app.use("/api/payments",require("./routes/PaymentVerificarion"));
-// app.use("/api/payments",require("./routes/RequestKey"));
+app.use("/api/sheets",require("./routes/storeuser"));
+app.use("/api/payments",require("./routes/createOrder"));
+app.use("/api/payments",require("./routes/PaymentVerificarion"));
+app.use("/api/payments",require("./routes/RequestKey"));
 
 
 var port = process.env.PORT || 4000;
