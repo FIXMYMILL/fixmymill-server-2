@@ -8,7 +8,7 @@ router.post("/createorder",(req,res)=>{
     key_secret: process.env.RAZORPAY_SECRET_KEY
   });
    var options = {
-      amount: (req.body.userorder.amount>1000)?300:200,  
+      amount: (req.body.userorder.amount>1000)?990:790,  
       currency: "INR",
      
     };
